@@ -2,37 +2,56 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* NavBar */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+@media(max-width: 900px) {
+  .logo {
+    display: none;
+  }
+}
+
+.navLink {
+  margin: "10px 0";
+  display: 'flex';
+  font-size: "0.8rem";
+  text-transform: "none";
   color: white;
+  font-weight: "400";
+  background-color: #192230;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* Themes */
+
+.light {
+  height: 600px;
+  background-color: #ffffff;
+  color: #FFBB3F
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark {
+  height: 600px;
+  background-color: #192230;
+  color: #ffffff;
+}
+
+/* Sections */
+
+.inicioSection {
+  background-image: url("./img/background_futuristic.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.eyewalkSection {
+  background-image: url("./img/background-eyewalk.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
 }
