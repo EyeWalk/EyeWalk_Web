@@ -29,29 +29,45 @@
 /* Themes */
 
 .light {
-  height: 600px;
   background-color: #ffffff;
-  color: #FFBB3F
+  color: #192230;
+  padding: "20px 30px";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .dark {
-  height: 600px;
   background-color: #192230;
   color: #ffffff;
+  padding: "20px 30px";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Sections */
 
 .inicioSection {
+  height: 600px;
   background-image: url("./img/background_futuristic.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.quem-somosSection {
   height: 600px;
 }
 
+.planosSection {
+  height: 900px;
+}
+
 .eyewalkSection {
+  height: 600px;
   background-image: url("./img/background-eyewalk.jpg");
   background-size: cover;
   background-position: center;
-  height: 600px;
 }

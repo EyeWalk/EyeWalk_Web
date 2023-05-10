@@ -4,7 +4,9 @@ import ScrollTop from './components/ScrollToTopButton';
 import Toolbar from '@mui/material/Toolbar';
 import * as React from 'react';
 import NavBar from './components/NavBar';
+import PriceTable from './components/PriceTable';
 import Footer from './components/Footer/Footer';
+import Title from './components/Title/Title';
 
 function App() {
   const inicio = useRef(null);
@@ -29,17 +31,18 @@ function App() {
         <button className='navLink' style={{ color: "#FFBB3F", fontWeight: "600" }} >Quero Experimentar</button>
       </NavBar>
       <Toolbar id="back-to-top-anchor" />
-      <section ref={inicio} className="inicioSection light">
-        Inicio
+      <section ref={inicio} className="inicioSection dark">
+        <Title text="Uma visão além do alcance" color="#FFBB3F" />
       </section>
       <section ref={quemSomos} className="quem-somosSection dark">
-        Quem somos
+        <Title text="Quem Somos" color="#fffff" />
       </section>
       <section ref={planos} className="planosSection light">
-        Planos
+        <Title text="Nossos Planos" color="#192230" />
+        <PriceTable />
       </section>
       <section ref={eyewalk} className="eyewalkSection dark">
-        EyeWalk
+        <Title text="Explore o mundo" color="#fffff" />
       </section>
       <ScrollTop />
       <Footer />
