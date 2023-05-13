@@ -1,0 +1,82 @@
+.App {
+    text-align: center;
+}
+
+/* NavBar */
+
+.logo {
+    display: flex;
+}
+
+@media(max-width: 900px) {
+    .logo {
+        display: none;
+    }
+}
+
+.navLink {
+    margin: "10px 0";
+    display: 'flex';
+    font-size: "0.8rem";
+    text-transform: "none";
+    color: white;
+    font-weight: "400";
+    background-color: #192230;
+    border: none;
+    cursor: pointer;
+}
+
+.navLinkComprar {
+    display: 'flex';
+    color: #FFBB3F;
+    font-weight: "600";
+    text-decoration: none;
+    font-size: "0.8rem";
+    margin: "10px 0";
+}
+
+/* Themes */
+
+.light {
+    background-color: #ffffff;
+    color: #192230;
+    padding: "20px 30px";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark {
+    background-color: #192230;
+    color: #ffffff;
+    padding: "20px 30px";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sections */
+
+.inicioSection {
+    height: 600px;
+    background-image: url("../../img/background_futuristic.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.quem-somosSection {
+    height: 600px;
+}
+
+.planosSection {
+    height: 900px;
+}
+
+.eyewalkSection {
+    height: 600px;
+    background-image: url("../../img/background-eyewalk.jpg");
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: #192230;
+    color: white;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+}
