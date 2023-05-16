@@ -24,7 +24,7 @@ const handleError = (error) => {
 const getPlanos = () => {
     return axios
         .get(baseUrl, getHeaders())
-        .then(response => console.log(response.data))
+        .then(response => response.data)
         .catch(error => handleError(error))
 }
 

@@ -12,7 +12,7 @@ import './index.css';
 const Shop = () => {
 
     return (
-        <div class='page'>
+        <div className='page'>
             {/* <NavBar>
                 <button className='navLink' onClick={() => window.open("./", "_self")}>Início</button>
                 <button className='navLink' onClick={() => window.open("./", "_self")}>Quem Somos</button>
