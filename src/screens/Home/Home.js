@@ -7,8 +7,9 @@ import ScrollTop from '../../components/ScrollToTopButton';
 import NavBar from '../../components/NavBar';
 import PriceTable from '../../components/PriceTable';
 import Footer from '../../components/Footer/Footer';
-import Title from '../../components/Title/Title';
+import Title from '../../components/Title';
 import GroupDetails from '../../components/GroupDetails';
+import Divider from '../../components/Divider';
 import { Link } from "react-router-dom"
 import planosService from "../../services/planos"
 
@@ -44,21 +45,26 @@ const Home = () => {
             </NavBar>
             <Toolbar id="back-to-top-anchor" />
             <section ref={inicioSection} className="inicioSection dark">
-                <Title text="Uma visão além do alcance!" color="#FFBB3F" />
+                <div class="overlay skeleton">
+                    <Title text="Uma visão além do alcance!" color="#FFBB3F" />
+                </div>
             </section>
             <section ref={quemSomosSection} className="quem-somosSection dark">
-                <Title text="Quem Somos" color="#fffff" />
+                <Title text="Quem Somos" color="#fffff" fontSize="32px" />
                 <Typography sx={{ margin: "20px 0", width: "80%" }}>A Insane Technology é uma startup brasileira, inicialmente criada para um projeto de conclusão de curso e que, atualmente, busca soluções tecnológicas que impactem a qualidade de vida das pessoas, como o EyeWalk que traz mais acessibilidade no dia a dia de pessoas com deficiência visual. </Typography>
                 <Typography sx={{ color: "#FFBB3F", fontWeight: 600, fontSize: "20px", margin: "15px 0" }}>Nosso Time</Typography>
                 <GroupDetails />
             </section>
             <section ref={eyewalkSection} className="eyewalkSection dark">
-                <div class="overlay">
-                    <Title text="Explore o mundo" color="#fffff" />
+                <div class="overlay eyewalkMain">
+                    <div className='title'>
+                        <Title text="Explore o mundo" color="#fffff" fontSize="54px" />
+                        <Divider color="#FFBB3F" height="3px" width="300px" borderRadius="5px" />
+                    </div>
                 </div>
             </section>
             <section ref={planosSection} className="planosSection light">
-                <Title text="Nossos Planos" color="#192230" />
+                <Title text="Nossos Planos" color="#192230" fontSize="32px" />
                 <PriceTable />
             </section>
             <ScrollTop />

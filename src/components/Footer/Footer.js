@@ -1,6 +1,5 @@
 import StyledTextarea from '@mui/base/TextareaAutosize';
 import Typography from '@mui/material/Typography';
-import Divider from "@mui/material/Divider"
 import Box from '@mui/material/Box';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -11,6 +10,7 @@ import FormHelperText from '@mui/material/FormHelperText';
 import Input from '@mui/material/Input';
 import InputLabel from '@mui/material/InputLabel';
 import TextField from '@mui/material/TextField';
+import Divider from '../Divider';
 import "./index.css"
 
 const Footer = () => {
@@ -38,7 +38,7 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div className='line'></div>
+            <Divider color="#4d5f7d" height="1px" width="100%" />
             <div className='footer-bottom'>
                 <Typography sx={{ fontSize: "12px" }}> &copy; 2023 Insane Technology </Typography>
                 <div className='contato'>
