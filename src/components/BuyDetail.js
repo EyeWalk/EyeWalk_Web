@@ -8,7 +8,7 @@ import oculos from "../img/oculos-transparent.png"
 const BuyDetail = () => {
     return (
         <div>
-            <div class="container-fluid text-start mb-5 p-0">
+            <div className="container-fluid text-start mb-5 p-0">
                 <h3>
                     EyeWalk
                     <img src={logo} width="10%" height="10%" alt="Logo EyeWalk" className='ms-2' />
