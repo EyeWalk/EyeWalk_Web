@@ -1,5 +1,6 @@
 import StyledTextarea from '@mui/base/TextareaAutosize';
 import Typography from '@mui/material/Typography';
+import Divider from "@mui/material/Divider"
 import Box from '@mui/material/Box';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -18,30 +19,28 @@ const Footer = () => {
             <div className='footer-main'>
                 <div className='duvidas'>
                     <Typography sx={{ textAlign: 'start', fontSize: "16px", marginBottom: "20px", textDecoration: "underline" }}>Dúvidas?</Typography>
-                    <FormControl>
-                        <Input placeholder='Nome' type='text' size='small' sx={{ color: "black", fontSize: "14px", backgroundColor: "white", borderRadius: "2px", textAlign: "center", paddingLeft: "5px", marginBottom: "15px" }} />
-                        <Input placeholder='Email' type="email" size='small' sx={{ color: "black", fontSize: "14px", backgroundColor: "white", borderRadius: "2px", textAlign: "center", paddingLeft: "5px", marginBottom: "15px" }} />
-
-
+                    <FormControl sx={{ flexDirection: "row" }}>
+                        <Box sx={{ display: "flex", flexDirection: "column", marginRight: "15px" }}>
+                            <Input placeholder='Nome' type='text' size='small' sx={{ color: "black", fontSize: "12px", backgroundColor: "white", borderRadius: "2px", textAlign: "center", paddingLeft: "5px", marginBottom: "15px" }} />
+                            <Input placeholder='Email' type="email" size='small' sx={{ color: "black", fontSize: "12px", backgroundColor: "white", borderRadius: "2px", textAlign: "center", paddingLeft: "5px", marginBottom: "15px" }} />
+                            <Button
+                                sx={{ textTransform: "none", color: "#ffffff", fontSize: "12px", marginBottom: "10px", height: "20px", width: "30px" }}
+                                variant="contained"
+                            >Enviar</Button>
+                        </Box>
                         <StyledTextarea
-                            aria-label="minimum height"
                             minRows={3}
                             maxRows={4}
-                            placeholder=""
+                            placeholder='Sua mensagem'
+                            style={{ height: "62px", fontSize: "12px", width: "150px", paddingLeft: "5px" }}
                         />
                     </FormControl>
 
-                    <Button
-                        sx={{ textTransform: "none", color: "#ffffff", fontSize: "12px", margin: "10px 0" }}
-                        variant="contained"
-                        size="small">Enviar</Button>
                 </div>
-
             </div>
-
             <div className='line'></div>
             <div className='footer-bottom'>
-                <Typography sx={{ fontSize: "12px" }}> &copy; 2023 Insane Technology - Todos os direitos reservados.</Typography>
+                <Typography sx={{ fontSize: "12px" }}> &copy; 2023 Insane Technology </Typography>
                 <div className='contato'>
                     <Typography sx={{ textAlign: 'center', fontSize: "14px", marginRight: "10px" }}>Siga-nos</Typography>
                     <div className='icons'>

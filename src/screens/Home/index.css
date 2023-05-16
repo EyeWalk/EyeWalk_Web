@@ -53,13 +53,20 @@
 
 .inicioSection {
     height: 600px;
-    background-image: url("../../img/background_futuristic.jpg");
+    background-image: url("../../img/vision.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .quem-somosSection {
-    height: 600px;
+    height: 900px;
+    padding: 30px 30px
+}
+
+@media(max-width: 900px) {
+    .quem-somosSection {
+        height: 1800px;
+    }
 }
 
 .planosSection {
@@ -74,7 +81,17 @@
 
 .eyewalkSection {
     height: 600px;
-    background-image: url("../../img/background-eyewalk.jpg");
+    background-image: url("../../img/explore.jpg");
     background-size: cover;
     background-position: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
 }

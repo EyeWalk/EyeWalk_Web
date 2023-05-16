@@ -1,6 +1,6 @@
 import ImgPlanoBasico from "../img/app.png"
 import ImgPlanoPremium from "../img/oculos.png"
-import PriceCard from './PriceCard/PriceCard';
+import PriceCard from './PriceCard';
 import Grid from '@mui/material/Grid';
 
 const PriceTable = () => {
