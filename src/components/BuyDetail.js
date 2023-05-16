@@ -11,24 +11,24 @@ const BuyDetail = () => {
             <div class="container-fluid text-start mb-5 p-0">
                 <h3>
                     EyeWalk
-                    <img src={logo} width="10%" height="10%" alt="Logo EyeWalk" className='ms-2'/>
+                    <img src={logo} width="10%" height="10%" alt="Logo EyeWalk" className='ms-2' />
                 </h3>
             </div>
             <p className='my-3'>Teste o EyeWalk</p>
             <h1 className='highLightText'>30 dias Grátis</h1>
             <span className='text-light'>Após o período de teste apenas R$150 por mês</span>
             <p className='my-5'>1 Aparelho EyeWalk, 1 carregador e link para o download do App</p>
-            
+
             <Row>
                 <Col xs='3' className='d-flex rounded-4 align-items-center'>
-                    <img src={oculos} alt='Óculos EyeWalk' className='img img-fluid'/>
+                    <img src={oculos} alt='Óculos EyeWalk' className='img img-fluid' />
                 </Col>
                 <Col>
                     <Row>
                         <Col><p>EyeWalk</p></Col>
                         <Col><p>30 dias grátis</p></Col>
-                    </Row>                  
-                    <Row style={{marginTop: '-10px'}}>
+                    </Row>
+                    <Row style={{ marginTop: '-10px' }}>
                         <Col><p>Qt 1</p></Col>
                         <Col><p className='text-muted'>R$150,00 / Mês seguinte</p></Col>
                     </Row>
@@ -39,14 +39,14 @@ const BuyDetail = () => {
                 <p className='fw-semibold'>SubTotal</p>
                 <p>R$ 150,00</p>
             </div>
-            <hr/>
+            <hr />
 
             <div className='d-flex justify-content-between mt-3 text-muted'>
                 <p className='fw-semibold'>Taxas</p>
                 <p>R$ 0,00</p>
             </div>
 
-            <hr className='mt-1'/>
+            <hr className='mt-1' />
 
             <div className='d-flex justify-content-between mt-5'>
                 <p className='fw-semibold'>Após 30 dias</p>

@@ -34,7 +34,7 @@ const NavBar = (props) => {
                         <img src={logo} alt='logo eyewalk' width="40" height="20" className='logo' />
                     </div>
 
-                    <Box sx={{ display: { xs: 'flex', md: 'flex' }, }}>
+                    <Box sx={{ display: { xs: 'flex', md: 'flex' } }}>
                         {props.children}
                     </Box>
                 </Toolbar>

@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 
 const PriceTable = () => {
     return (
-        <Grid container spacing={2}>
+        <Grid container spacing={2} my={4}>
             <Grid item xs={12} md={6} sx={{ display: "flex", justifyContent: "center" }}>
                 <PriceCard imgSrc={ImgPlanoBasico} imgWidth={120} imgAlt="tela aplicativo" title="Plano Básico" text="Guia com navegação por voz, agenda de contatos com função de emergência e objetos." />
             </Grid>
