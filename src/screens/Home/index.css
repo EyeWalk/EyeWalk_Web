@@ -59,7 +59,7 @@
 /* Sections */
 
 .inicioSection {
-    height: 600px;
+    height: 100vh;
     background-image: url("../../img/vision.jpg");
     background-size: cover;
     background-position: center;
@@ -77,12 +77,12 @@
 }
 
 .planosSection {
-    height: 900px;
+    height: 1100px;
 }
 
 @media(max-width: 900px) {
     .planosSection {
-        height: 1600px;
+        height: 1900px;
     }
 }
 

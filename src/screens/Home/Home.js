@@ -25,8 +25,6 @@ const Home = () => {
         planosService.getPlanos().then(plano => setPlanos(plano))
     }, [])
 
-    console.log(planos, " Home Console");
-
     const scrollTo = (elementRef) => {
         window.scrollTo({
             top: elementRef.current.offsetTop,

@@ -6,10 +6,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Button from '@mui/material/Button';
 import FormControl from '@mui/material/FormControl';
-import FormHelperText from '@mui/material/FormHelperText';
 import Input from '@mui/material/Input';
-import InputLabel from '@mui/material/InputLabel';
-import TextField from '@mui/material/TextField';
 import Divider from '../Divider';
 import "./index.css"
 
@@ -19,7 +16,7 @@ const Footer = () => {
             <div className='footer-main'>
                 <div className='duvidas'>
                     <Typography sx={{ textAlign: 'start', fontSize: "16px", marginBottom: "20px", textDecoration: "underline" }}>Dúvidas?</Typography>
-                    <FormControl sx={{ flexDirection: "row" }}>
+                    <Box sx={{ display: "flex", flexDirection: "row" }}>
                         <Box sx={{ display: "flex", flexDirection: "column", marginRight: "15px" }}>
                             <Input placeholder='Nome' type='text' size='small' sx={{ color: "black", fontSize: "12px", backgroundColor: "white", borderRadius: "2px", textAlign: "center", paddingLeft: "5px", marginBottom: "15px" }} />
                             <Input placeholder='Email' type="email" size='small' sx={{ color: "black", fontSize: "12px", backgroundColor: "white", borderRadius: "2px", textAlign: "center", paddingLeft: "5px", marginBottom: "15px" }} />
@@ -34,7 +31,7 @@ const Footer = () => {
                             placeholder='Sua mensagem'
                             style={{ height: "62px", fontSize: "12px", width: "150px", paddingLeft: "5px" }}
                         />
-                    </FormControl>
+                    </Box>
 
                 </div>
             </div>

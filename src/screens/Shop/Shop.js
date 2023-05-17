@@ -1,12 +1,8 @@
 import * as React from 'react';
-import { useRef, useEffect, useState } from 'react';
-import Toolbar from '@mui/material/Toolbar';
-import NavBar from '../../components/NavBar';
-import Footer from '../../components/Footer/Footer';
+import { useEffect, useState } from 'react';
 import BuyForm from '../../components/BuyForm';
 import BuyDetail from '../../components/BuyDetail';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import planosService from "../../services/planos"
