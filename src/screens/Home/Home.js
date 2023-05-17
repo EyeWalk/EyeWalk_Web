@@ -25,7 +25,7 @@ const Home = () => {
         planosService.getPlanos().then(plano => setPlanos(plano))
     }, [])
 
-    console.log(planos[0]+" Home Console");
+    console.log(planos, " Home Console");
 
     const scrollTo = (elementRef) => {
         window.scrollTo({
@@ -45,7 +45,7 @@ const Home = () => {
             </NavBar>
             <Toolbar id="back-to-top-anchor" />
             <section ref={inicioSection} className="inicioSection dark">
-                <div class="overlay skeleton">
+                <div className="overlay skeleton">
                     <Title text="Uma visão além do alcance!" color="#FFBB3F" />
                 </div>
             </section>
@@ -56,7 +56,7 @@ const Home = () => {
                 <GroupDetails />
             </section>
             <section ref={eyewalkSection} className="eyewalkSection dark">
-                <div class="overlay eyewalkMain">
+                <div className="overlay eyewalkMain">
                     <div className='title'>
                         <Title text="Explore o mundo" color="#fffff" fontSize="54px" />
                         <Divider color="#FFBB3F" height="3px" width="300px" borderRadius="5px" />
@@ -65,7 +65,7 @@ const Home = () => {
             </section>
             <section ref={planosSection} className="planosSection light">
                 <Title text="Nossos Planos" color="#192230" fontSize="32px" />
-                <PriceTable />
+                <PriceTable planos={planos} />
             </section>
             <ScrollTop />
             <Footer />

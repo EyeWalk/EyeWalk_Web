@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useRef, useEffect, useState } from 'react';
 import Toolbar from '@mui/material/Toolbar';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer/Footer';
@@ -8,9 +9,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import planosService from "../../services/planos"
 
 const Shop = () => {
+    const [planos, setPlanos] = useState(null)
 
+    useEffect(() => {
+        planosService.getPlanos().then(plano => setPlanos(plano))
+    }, [])
     return (
         <div className='page'>
             {/* <NavBar>
@@ -26,7 +32,7 @@ const Shop = () => {
             <Container className='container-background'>
                 <Row >
                     <Col md className='primaryBackground text-white px-5 py-4'>
-                        <BuyDetail />
+                        <BuyDetail planos={planos} />
                     </Col>
                     <Col md className='mx-md-1 mx-lg-5 py-4'>
                         <BuyForm />

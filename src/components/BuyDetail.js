@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import logo from "../img/logoEyeWalk.png"
 import oculos from "../img/oculos-transparent.png"
 
-const BuyDetail = () => {
+const BuyDetail = ({ planos }) => {
     return (
         <div>
             <div className="container-fluid text-start mb-5 p-0">
@@ -30,14 +30,14 @@ const BuyDetail = () => {
                     </Row>
                     <Row style={{ marginTop: '-10px' }}>
                         <Col><p>Qt 1</p></Col>
-                        <Col><p className='text-muted'>R$150,00 / Mês seguinte</p></Col>
+                        <Col><p className='text-muted'>R$ {planos ? planos[1].price : "150,00"} / Mês seguinte</p></Col>
                     </Row>
                 </Col>
             </Row>
 
             <div className='d-flex justify-content-between mt-5'>
                 <p className='fw-semibold'>SubTotal</p>
-                <p>R$ 150,00</p>
+                <p>R$ {planos ? planos[1].price : "150,00"}</p>
             </div>
             <hr />
 
@@ -50,7 +50,7 @@ const BuyDetail = () => {
 
             <div className='d-flex justify-content-between mt-5'>
                 <p className='fw-semibold'>Após 30 dias</p>
-                <p>R$ 150,00</p>
+                <p>R$ {planos ? planos[1].price : "150,00"}</p>
             </div>
 
             <div className='d-flex justify-content-between mt-5 fs-3 highLightText'>

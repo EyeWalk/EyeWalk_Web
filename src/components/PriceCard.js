@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-const PriceCard = ({ imgSrc, imgAlt, imgWidth, title, text, onClick, cardMargin }) => {
+const PriceCard = ({ imgSrc, imgAlt, imgWidth, title, text, onClick, cardMargin, price }) => {
 
     const theme = createTheme({
         palette: {
@@ -30,11 +30,11 @@ const PriceCard = ({ imgSrc, imgAlt, imgWidth, title, text, onClick, cardMargin 
                     <Typography component="div" variant="h5" sx={{ margin: "10px 0" }}>
                         {title}
                     </Typography>
-                    <Typography variant="subtitle1" color="text.secondary" component="div">
+                    <Typography variant="subtitle" color="text.secondary" component="div">
                         {text}
                     </Typography>
-                    <Typography variant="subtitle1" color="text.secondary" component="div">
-                        {text}
+                    <Typography variant="price" color="text.secondary" component="div">
+                        {price}
                     </Typography>
                 </CardContent>
                 <ThemeProvider theme={theme}>
