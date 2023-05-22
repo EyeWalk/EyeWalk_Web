@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --highLightColor: #FFBB3F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: rgba(60, 60, 60);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover {
+    color: #FFBB3F;
+    color: var(--highLightColor);
+}
+
+.bg-navBar {
+    /* background-color: rgba(25, 34, 48, 92%); */
+    transition: .5s;
+}
+
+.bg-navBar-active {
+    background-color: rgba(25, 34, 48, 92%);
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .3);
+}
+
+.text-highLight {
+    color: #FFBB3F;
+    color: var(--highLightColor);
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    padding: 0 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../img/vision-cropped.jpg);
+    background-position: right;
+    background-size: cover;
+    background-clip: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 8vmin;
+    margin-bottom: 2rem;
+}
+
+.hero-text {
+    font-size: 5vmin;
+    margin-bottom: 2rem;
+}
+
+.hero-link {
+    border: 1px solid var(--highLightColor);
+    padding: 12px 30px;
+    border-radius: 70px;
+    background-color: var(--highLightColor);
+    font-size: 3vmin;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.hero-link:hover {
+    background: transparent;
+}
+
+.fullHeight {
+    width: 100%;
+    height: 100vh;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(70, 70, 70);
+    text-align: center;
+}
+
+.line {
+    width: 220px;
+    height: 4px;
+    background-color: var(--highLightColor);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    margin: 0 0;
+    padding: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../../img/explore.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+}
+
+
+.explore-title {
+    margin-bottom: 20px;
+    font-size: 6vmin;
+}
+
+.explore-text {
+    width: 70%;
+    font-size: 3vmin;
+    margin-bottom: 2rem;
+}
+
+.explore .line {
+    width: 40%;
+}
+
+.explore .btn:hover {
+    color: var(--highLightColor);
+    background-color: #fff;
+    border-color: #fff;
+}

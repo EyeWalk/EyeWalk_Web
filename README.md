@@ -1,1 +1,1 @@
-# EyeWalk_Web
+# EyeWalk Web Application
