@@ -10,7 +10,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import CheckIcon from '@mui/icons-material/Check';
 
-const PlanCard = ({title, text, price, imgSrc, imgAlt, btnText, onClick}) => {
+const PlanCard = ({title, text, price, imgSrc, imgAlt, btnText, href}) => {
 
     const description = text.split(",")
     
@@ -20,7 +20,7 @@ const PlanCard = ({title, text, price, imgSrc, imgAlt, btnText, onClick}) => {
                 <Image src={imgSrc} className='card-img-top' alt={imgAlt}/>
                 <Card.Title className='fw-bold mt-4 fs-4'>{title}</Card.Title>
                 <Card.Subtitle>Assinatura mensal</Card.Subtitle>
-                <Card.Text className='fw-bold text-highLight mt-2'>{price}</Card.Text>
+                <Card.Text className='fw-bold text-highLight mt-2'>R$ {price}</Card.Text>
                 <Card.Text className='fs-5'>
                     <List>
                         {description.map((item, index) => {
@@ -35,7 +35,7 @@ const PlanCard = ({title, text, price, imgSrc, imgAlt, btnText, onClick}) => {
                         })}
                     </List>
                 </Card.Text>
-                <Button className='bg-button mb-4' onClick={onClick}>{btnText}</Button>
+                <Button className='bg-button mb-4' onClick={() => window.open(href)}>{btnText}</Button>
             </Card.Body>
         </Card>
     )

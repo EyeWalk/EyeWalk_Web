@@ -52,6 +52,12 @@ a:hover {
     color: var(--highLightColor);
 }
 
+.bg-primary {
+    background-color: #192230 !important;
+    background-color: var(--primaryBackground) !important;
+    color: white;
+}
+
 .bg-button {
     background-color: #FFBB3F;
     background-color: var(--highLightColor);
@@ -94,6 +100,7 @@ a:hover {
     background-size: cover;
     background-clip: border-box;
     color: #fff;
+    cursor: pointer;
 }
 
 .hero-title {
@@ -150,7 +157,7 @@ a:hover {
 }
 
 .line {
-    width: 220px;
+    width: 30%;
     height: 4px;
     background-color: var(--highLightColor);
     border-radius: 10px;
@@ -167,3 +174,35 @@ a:hover {
     background-color: #fff;
     border-color: #fff;
 }
+
+
+.slide-bottom {
+	-webkit-animation: slide-bottom 1000ms ease-out infinite alternate both;
+	        animation: slide-bottom 1000ms ease-out infinite alternate both;
+            cursor: pointer;
+}
+
+ @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              color: white;
+    }
+    100% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+              color: #FFBB3F;
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              color: white;
+    }
+    100% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+              color: #FFBB3F;
+    }
+  }

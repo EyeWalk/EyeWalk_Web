@@ -17,12 +17,21 @@ const BuyForm = () => {
                 <FormControl name='email' className='form-control' type='email' placeholder='email@email.com'></FormControl>
             </Form.Group>
 
-            <Col xs='4' sm='4' md='5' lg='4'>
-                <Form.Group controlId='formCep' className='mt-2'>
-                    <FormLabel>CEP</FormLabel>
-                    <FormControl name='zipcode' className='form-control' type='text' pattern="\d{5}-?\d{3}" placeholder='00000-000'></FormControl>
-                </Form.Group>
-            </Col>
+            <Row>
+                <Col xs='4' sm='4' md='5' lg='4'>
+                    <Form.Group controlId='formCPF' className='mt-2'>
+                        <FormLabel>CPF</FormLabel>
+                        <FormControl name='cpf' className='form-control' type='text' pattern="\d{3}.?\d{3}.?\d{3}-?\d{2}" placeholder='000.000.000-00'></FormControl>
+                    </Form.Group>
+                </Col>
+                <Col xs='4' sm='4' md='5' lg='4'>
+                    <Form.Group controlId='formCep' className='mt-2'>
+                        <FormLabel>CEP</FormLabel>
+                        <FormControl name='zipcode' className='form-control' type='text' pattern="\d{5}-?\d{3}" placeholder='00000-000'></FormControl>
+                    </Form.Group>
+                </Col>
+            </Row>
+
 
             <Row>
                 <Col xs='9' sm='8' className='mt-2'>

@@ -4,7 +4,7 @@ import BuyForm from '../../components/BuyForm';
 import BuyDetail from '../../components/BuyDetail';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
+import './shop.css';
 import planosService from "../../services/planos"
 
 const Shop = () => {
@@ -15,18 +15,9 @@ const Shop = () => {
     }, [])
     return (
         <div className='page'>
-            {/* <NavBar>
-                <button className='navLink' onClick={() => window.open("./", "_self")}>Início</button>
-                <button className='navLink' onClick={() => window.open("./", "_self")}>Quem Somos</button>
-                <button className='navLink' onClick={() => window.open("./", "_self")}>Planos</button>
-                <button className='navLink' onClick={() => window.open("./", "_self")}>EyeWalk</button>
-                <Link className='buttonComprar' to="/comprar" style={{ fontSize: "0.9rem", padding: "1px 6px", fontWeight: 600, color: "#FFBB3F", textDecoration: "none" }}>Quero Experimentar</Link>
-            </NavBar> */}
 
-            {/* <Toolbar id="back-to-top-anchor" /> */}
-
-            <Container className='container-background'>
-                <Row >
+            <Container className='d-flex flex-column justify-content-center mh-100 align-items-center'>
+                <Row className='bg-white'>
                     <Col md className='primaryBackground text-white px-5 py-4'>
                         <BuyDetail planos={planos} />
                     </Col>
@@ -35,7 +26,6 @@ const Shop = () => {
                     </Col>
                 </Row>
             </Container>
-
 
         </div>
     )
