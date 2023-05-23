@@ -2,6 +2,7 @@
 
 :root {
     --highLightColor: #FFBB3F;
+    --primaryBackground: #192230;
 }
 
 * {
@@ -51,6 +52,27 @@ a:hover {
     color: var(--highLightColor);
 }
 
+.bg-button {
+    background-color: #FFBB3F;
+    background-color: var(--highLightColor);
+    color: #000;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+.bg-button:hover {
+    background-color: #192230;
+    background-color: var(--primaryBackground);
+    color: #FFF;
+}
+
+.bg-button:active {
+    background-color: #000 !important;
+}
+
 .bg-navBar {
     /* background-color: rgba(25, 34, 48, 92%); */
     transition: .5s;
@@ -67,19 +89,11 @@ a:hover {
 }
 
 .hero {
-    width: 100%;
-    height: 100vh;
-    padding: 0 10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../img/vision-cropped.jpg);
     background-position: right;
     background-size: cover;
     background-clip: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: #fff;
-    text-align: center;
 }
 
 .hero-title {
@@ -107,40 +121,20 @@ a:hover {
     background: transparent;
 }
 
-.fullHeight {
-    width: 100%;
-    height: 100vh;
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgba(70, 70, 70);
-    text-align: center;
-}
-
-.line {
-    width: 220px;
-    height: 4px;
-    background-color: var(--highLightColor);
-    border-radius: 10px;
-    margin-bottom: 30px;
-    border: none;
+.mh-100 {
+    min-height: 100vh !important;
 }
 
 .explore {
-    width: 100%;
-    height: 100vh;
-    margin: 0 0;
-    padding: 50px;
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../../img/explore.jpg);
     background-position: center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     color: #fff;
+}
+
+.border-eyewalk {
+    border-color: #FFBB3F;
+    border-color: var(--highLightColor);
 }
 
 
@@ -155,8 +149,17 @@ a:hover {
     margin-bottom: 2rem;
 }
 
+.line {
+    width: 220px;
+    height: 4px;
+    background-color: var(--highLightColor);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: none;
+}
+
 .explore .line {
-    width: 40%;
+    width: 100%;
 }
 
 .explore .btn:hover {

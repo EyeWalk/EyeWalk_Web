@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { Navbar, Container, Row, Col, Nav, NavbarBrand, NavLink } from 'react-bootstrap';
+import { Navbar, Container, Row, Col, Nav, Image, NavbarBrand, NavLink, Button } from 'react-bootstrap';
 import logo from '../../img/logoEyeWalk.png';
+import imageApp from '../../img/app-925.png';
+import imageOculos from '../../img/oculos-925.png';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
 import './main.css';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
@@ -12,19 +13,7 @@ import ellen from '../../img/PictureE.png';
 import gabriel from '../../img/PictureG.png';
 import rafael from '../../img/PictureRa.png';
 import renne from '../../img/PictureRe.png';
-
-const changeClassByWidth = () => {
-    var width = document.body.clientWidth;
-    const elements = document.querySelectorAll('[data-remove-full]');
-    if (width < 786) 
-        elements.forEach(element => {element.classList.remove('fullHeight')});
-    else 
-        elements.forEach(element => {element.classList.add('fullHeight')});
-}
-
-document.onreadystatechange = () => {changeClassByWidth();}
-
-window.addEventListener('resize', changeClassByWidth);
+import PlanCard from './PlanCard'
 
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.bg-navBar');
@@ -58,7 +47,7 @@ const AppBar = () => {
 
 const Inicio = () => {
     return (
-        <Container fluid id='inicio' className='hero'>
+        <Container fluid id='inicio' className='d-flex flex-column justify-content-center align-items-center w-100 mh-100 hero'>
             <h3 className="hero-title fw-bold">EyeWalk...</h3>
             <h2 className="hero-text">Uma visão além do alcance!</h2>
             <a href="#quemsomos" className="hero-link">Mais informações</a>
@@ -68,8 +57,8 @@ const Inicio = () => {
 
 const QuemSomos = () => {
     return (
-        <Container id='quemsomos' className='pt-5 fullHeight' data-remove-full>
-            <h1 className='display-6 fw-bold text-center'>Quem Somos</h1>
+        <Container id='quemsomos' className='py-5 d-flex flex-column justify-content-center mh-100'>
+            <h1 className='display-6 fw-bold text-center mt-5'>Quem Somos</h1>
             <p className='mx-5 mb-2 fs-5 text-center'>A Insane Technology é uma startup brasileira, inicialmente criada para um projeto de conclusão de curso e que, atualmente, busca soluções tecnológicas que impactem a qualidade de vida das pessoas, como o EyeWalk que traz mais acessibilidade no dia a dia de pessoas com deficiência visual.</p>
 
             <Row className='w-100 text-center'>
@@ -104,21 +93,33 @@ const QuemSomos = () => {
 
 const EyeWalk = () => {
     return (
-        <Container fluid id='eyewalk' className='explore'>
-            <h2 class="explore-title">Explore o mundo</h2>
-            <div class="line"></div>
-            <p class="explore-text">
-                Seu guia para uma vida exploratória cheia de independência, segurança e descobertas deslumbrantes. Desperte novas sensações, desbrave culturas vibrantes e abra portas para experiências incríveis. Com o EyeWalk você poderá embarcar em uma jornada sem limites.
-            </p>
+        <Container fluid id='eyewalk' className='p-4 d-flex flex-column justify-content-center w-100 mh-100 explore'>
+            <Col xs='12' sm='12' md='8' lg='6' xl='6' xxl='5' className='fs-3 ms-md-4'>
+                <h2 className='display-3 fw-bold'>Explore o mundo</h2>
+                <div className='line'/>
+                <p>Seu guia para uma vida exploratória cheia de independência, segurança e descobertas deslumbrantes. Desperte novas sensações, desbrave culturas vibrantes e abra portas para experiências incríveis. Com o EyeWalk você poderá embarcar em uma jornada sem limites.</p>
+            </Col>
             <a href="#buy" class="btn">Veja mais</a>
         </Container>
     )
 }
 
+const textBasico = 'Guia com navagação por voz, Reconhecimento de objetos, Agenda de contatos com função de emergência';
+const textPremium = 'Guia com navagação por voz, Reconhecimento de objetos, Agenda de contatos com função de emergência, Dispositivo Eyewalk (incluso fones e carregador), Detecção de obstáculos em tempo real, Reconhecimento facial';
+
 const Planos = () => {
     return (
-        <>
-        </>
+        <Container id='planos' className='p-md-0 p-lg-5 my-5 d-flex flex-column justify-content-center mh-100'>
+            <h1 className='display-6 fw-bold text-center mt-5 pt-3'>Nossos Planos</h1>
+            <Row className='justify-content-between'>
+                <Col xs='12' sm='12' md='6' lg='5' className='fs-3 text-center mt-5'>
+                    <PlanCard title='Plano Básico' text={textBasico} price='R$ 75' imgSrc={imageApp} imgAlt='Aplicação Web' btnText='Assinar'></PlanCard>
+                </Col>
+                <Col xs='12' sm='12' md='6' lg='5' className='fs-3 text-center mt-5'>
+                    <PlanCard title='Plano Premium' text={textPremium} price='R$ 150' imgSrc={imageOculos} imgAlt='Óculos EyeWalk' btnText='30 dias grátis'></PlanCard>
+                </Col>
+            </Row>
+        </Container>
     )
 }
 
