@@ -5,7 +5,7 @@ import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Fade from '@mui/material/Fade';
 
-const ScrollTop = () => {
+const ScrollTopButton = ({querySelector}) => {
 
     const trigger = useScrollTrigger({
         disableHysteresis: true,
@@ -13,9 +13,7 @@ const ScrollTop = () => {
     });
 
     const handleClick = (event) => {
-        const anchor = (event.target.ownerDocument || document).querySelector(
-            '#inicio',
-        );
+        const anchor = (event.target.ownerDocument || document).querySelector(querySelector);
 
         if (anchor) {
             anchor.scrollIntoView({
@@ -39,4 +37,12 @@ const ScrollTop = () => {
     );
 }
 
-export default ScrollTop
+export const scrollTo = (elementId) => {
+    window.scrollTo({
+        top: document.getElementById(elementId).offsetTop,
+        behavior: "smooth"
+    })
+}
+
+
+export default ScrollTopButton

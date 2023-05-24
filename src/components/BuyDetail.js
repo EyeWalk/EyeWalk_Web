@@ -1,9 +1,8 @@
 import * as React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import logo from "../img/logoEyeWalk.png"
-import oculos from "../img/oculos-transparent.png"
+import logo from "../images/logoEyeWalk.png"
+import oculos from "../images/oculos-925.png"
 
 const BuyDetail = ({ planos }) => {
     return (

@@ -1,84 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-:root {
-    --highLightColor: #FFBB3F;
-    --primaryBackground: #192230;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    overflow-x: hidden;
-    scrollbar-width: thin;
-    overflow: overlay;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-  
-::-webkit-scrollbar-thumb {
-    background: rgba(60, 60, 60);
-    border-radius: 30px;
-}
-
-::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-ul {
-    list-style: none;
-}
-
-a:hover {
-    color: #FFBB3F;
-    color: var(--highLightColor);
-}
-
-.bg-primary {
-    background-color: #192230 !important;
-    background-color: var(--primaryBackground) !important;
-    color: white;
-}
-
-.bg-button {
-    background-color: #FFBB3F;
-    background-color: var(--highLightColor);
-    color: #000;
-    outline: none;
-    border: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 10px 30px;
-}
-
-.bg-button:hover {
-    background-color: #192230;
-    background-color: var(--primaryBackground);
-    color: #FFF;
-}
-
-.bg-button:active {
-    background-color: #000 !important;
-}
-
 .bg-navBar {
     /* background-color: rgba(25, 34, 48, 92%); */
     transition: .5s;
@@ -89,13 +8,8 @@ a:hover {
     box-shadow: 0 3px 1rem rgba(0, 0, 0, .3);
 }
 
-.text-highLight {
-    color: #FFBB3F;
-    color: var(--highLightColor);
-}
-
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../img/vision-cropped.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../images/vision-cropped.jpg);
     background-position: right;
     background-size: cover;
     background-clip: border-box;
@@ -128,12 +42,8 @@ a:hover {
     background: transparent;
 }
 
-.mh-100 {
-    min-height: 100vh !important;
-}
-
 .explore {
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../../img/explore.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../../images/explore.jpg);
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -156,17 +66,8 @@ a:hover {
     margin-bottom: 2rem;
 }
 
-.line {
+#planos .line {
     width: 30%;
-    height: 4px;
-    background-color: var(--highLightColor);
-    border-radius: 10px;
-    margin-bottom: 30px;
-    border: none;
-}
-
-.explore .line {
-    width: 100%;
 }
 
 .explore .btn:hover {

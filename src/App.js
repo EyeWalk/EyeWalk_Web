@@ -1,8 +1,9 @@
 import * as React from 'react';
-import './App.css';
-import Home from "./screens/Home/Home"
-import Shop from "./screens/Shop/Shop"
 import Main from "./screens/Main/Main"
+import Shop from "./screens/Shop/Shop"
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './app.css'
 
 import { Routes, Route } from "react-router-dom"
 
