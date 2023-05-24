@@ -16,7 +16,7 @@ const PlanCard = ({title, text, price, imgSrc, imgAlt, btnText, href}) => {
                 <Image src={imgSrc} className='card-img-top' alt={imgAlt}/>
                 <Card.Title className='fw-bold mt-4 fs-4'>{title}</Card.Title>
                 <Card.Subtitle>Assinatura mensal</Card.Subtitle>
-                <Card.Text className='fw-bold text-highLight mt-2'>R$ {price}</Card.Text>
+                <Card.Text className='fw-bold text-highLight mt-2'>{price}</Card.Text>
                 <List className='mb-4'>
                     {description.map((item, index) => {
                         return (

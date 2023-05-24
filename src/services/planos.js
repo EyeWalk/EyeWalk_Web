@@ -20,11 +20,13 @@ const handleError = (error) => {
         throw new Error(error.response.data.message)
 }
 
-const getPlanos = () => {
-    return axios
-        .get(baseUrl, getHeaders())
-        .then(response => response.data)
-        .catch(error => handleError(error))
+const getPlanos = async () => {
+    try {
+        const response = await axios.get(baseUrl, getHeaders());
+        return response.data;
+    } catch (error) {
+        return handleError(error);
+    }
 }
 
 export default { getPlanos }
