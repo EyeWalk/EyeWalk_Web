@@ -24,14 +24,14 @@ const Planos = () => {
                 <Col xs='12' sm='12' md='6' lg='5' className='fs-3 text-center mt-5'>
                     {
                     planos
-                        ? <PlanCard title={planos[0].name} text={planos[0].description} price={currencyFormat(planos[0].price)} imgSrc={imageApp} imgAlt='Aplicação Web' btnText='Assinar' href='/comprar'></PlanCard>
+                        ? <PlanCard title={planos[0].name} text={planos[0].description} price={currencyFormat(planos[0].price)} imgSrc={imageApp} imgAlt='Aplicação Web' btnText='Assinar' href={'/comprar?p=0'}></PlanCard>
                         : <PlanCard title='Plano Básico' text='' price='preço' imgSrc={imageApp} imgAlt='Aplicação Web' btnText='Assinar'></PlanCard>
                     }
                 </Col>
                 <Col xs='12' sm='12' md='6' lg='5' className='fs-3 text-center mt-5'>
                     {
                     planos
-                        ? <PlanCard title={planos[1].name} text={planos[1].description} price={currencyFormat(planos[1].price)} imgSrc={imageOculos} imgAlt='Óculos EyeWalk' btnText='Assinar' href='/comprar'></PlanCard>
+                        ? <PlanCard title={planos[1].name} text={planos[1].description} price={currencyFormat(planos[1].price)} imgSrc={imageOculos} imgAlt='Óculos EyeWalk' btnText='Assinar' href={'/comprar?p=1'}></PlanCard>
                         : <PlanCard title='Plano Premium' text='' price='preço' imgSrc={imageOculos} imgAlt='Óculos EyeWalk' btnText='Assinar'></PlanCard>
                     }
                 </Col>

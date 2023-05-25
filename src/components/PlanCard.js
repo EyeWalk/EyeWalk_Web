@@ -29,7 +29,7 @@ const PlanCard = ({title, text, price, imgSrc, imgAlt, btnText, href}) => {
                         )
                     })}
                 </List>
-                <Button className='bg-button mb-4' onClick={() => window.open(href, '_self')}>{btnText}</Button>
+                <Button className='bg-button mb-4' onClick={() => window.open(href)}>{btnText}</Button>
             </Card.Body>
         </Card>
     )
