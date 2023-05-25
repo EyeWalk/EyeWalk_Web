@@ -28,7 +28,7 @@ const AppBar = () => {
                     <NavLink onClick={() => scrollTo('eyewalk')}>EyeWalk</NavLink>
                     <NavLink onClick={() => scrollTo('planos')}>Planos</NavLink>
                     <NavLink onClick={() => scrollTo('contato')}>Contato</NavLink>
-                    <NavLink className='text-highLight' onClick={()=>window.open('/comprar?plano=premium')}>Quero experimentar</NavLink>
+                    <NavLink className='text-highLight' href='/comprar'>Quero experimentar</NavLink>
                 </Nav>
             </NavbarCollapse>
 
