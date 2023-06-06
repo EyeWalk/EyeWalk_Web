@@ -3,7 +3,7 @@ import {Form, Button, FormLabel, FormControl, Col, Row} from 'react-bootstrap';
 
 const BuyForm = () => {
     return (
-        <Form action='https://api.eyewalk.42g.com.br/api/v1/plan' method='post'>
+        <Form action='https://eyewalk.42g.com.br/' method='get'>
             <p className='fw-semibold fs-5' style={{textDecoration: 'underline'}}>Dados da entrega</p>
 
             <Form.Group controlId='formName' className='mt-4'>
