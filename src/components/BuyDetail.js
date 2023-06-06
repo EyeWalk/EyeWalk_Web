@@ -10,8 +10,8 @@ const BuyDetail = ({ planos }) => {
     const queryParameters = new URLSearchParams(window.location.search)
     let planImage;
     let position = queryParameters.get("p")
-    if (position == null || position == undefined) position = "0";
-    if (position == 0) planImage = app; else planImage = oculos;
+    if (position === null || position === undefined) position = "0";
+    if (position === "0") planImage = app; else planImage = oculos;
     return (
         <div>
             <div className="container-fluid text-start mb-5 p-0">
